@@ -37,7 +37,6 @@ const informationFeature=[
       <main>
         <Banner/>
         <section className='features'>
-          <h2 className="sr-only">Features</h2>
             {informationFeature.map((elt)=>
               <Features element={elt} key={elt.id}/>
             )}
