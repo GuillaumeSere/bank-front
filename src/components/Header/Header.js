@@ -23,7 +23,7 @@ export default function Header(){
             <i className="fa fa-user-circle"></i>
             Sign in
             </Link>
-            <Link className="main-nav-item" to="/login">
+            <Link to="/login" className="main-nav-item">
             <i className='fa fa-sign-out'></i>
             Sign Out
             </Link>
