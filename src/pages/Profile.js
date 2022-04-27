@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
-import { axiosPutUser } from '../data/callApi';
+import { axiosPutUse } from '../data/callApi';
 import * as connectionActions from '../data/connexion';
 import transactionsData from "../data/transactions";
 import Card from '../components/Card/Card';
 import './Profile.css';
-
 
 
 /**show Page User profile
@@ -29,7 +28,7 @@ export default function UserProfile() {
         setdisplayEditName(!displayEditName)
     }
     async function editUser() {
-        const axios = await axiosPutUser(stateReduxToken, { firstName, lastName })
+        const axios = await axiosPutUse(stateReduxToken, { firstName, lastName })
         dispatch(connectionActions.getUser({ firstName: axios.firstName, lastName: axios.lastName }))
         setdisplayEditName(!displayEditName)
     }

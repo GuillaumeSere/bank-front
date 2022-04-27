@@ -10,9 +10,8 @@ const connectionSlice= createSlice({
         rememberMe:false,
         firstName:null,
         lastName:null,
-
-
     },
+    
     reducers:{
         getToken:  (state,action)=>{
             return {

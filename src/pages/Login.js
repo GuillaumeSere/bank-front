@@ -14,20 +14,20 @@ import { useDispatch } from 'react-redux';
 export default function SignIn(){
 
     const dispatch = useDispatch()
-    const [email, setEmail]=useState()
-    const [password, setPassword]=useState()
-    const history=useNavigate()
-    const stateReduxToken=useSelector((state)=>state.connection.token)
+    const [email, setEmail] = useState()
+    const [password, setPassword] = useState()
+    const history = useNavigate()
+    const stateReduxToken = useSelector((state)=>state.connection.token)
 
 
     async function  getUserAxios(){
-        const axios=await axiosProfile(stateReduxToken)           
+        const axios = await axiosProfile(stateReduxToken)          
         dispatch(connectionActions.getUser({firstName:axios.firstName,lastName:axios.lastName}))
     }
     
     async function submit(){
         console.log({email,password})
-        const responseAxios= await axiosToken({email,password})
+        const responseAxios = await axiosToken({email,password})
         if(responseAxios){
             dispatch(connectionActions.getToken({token:responseAxios,email:email}))
         }

@@ -15,7 +15,7 @@ import * as connectionActions from '../../data/connexion';
         const isConnected = useSelector((state)=>state.connection.isConnected)
         const firstName = useSelector((state)=>state.connection.firstName)
         const dispatch = useDispatch()
-        const history= useNavigate() 
+        const history = useNavigate() 
       
         function signOut(){
           dispatch(connectionActions.signOut())
