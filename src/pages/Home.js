@@ -44,6 +44,6 @@ const informationFeature=[
       </main>
 
     </>
-  )   
+  );   
 
 }

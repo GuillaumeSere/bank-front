@@ -14,33 +14,32 @@ import iconSecurity from '../../assets/icon-security.png';
 
 export default function Features(props){
 
-  let variableImg;
+  let image = "";
+  
   switch(props.element.img){
     case 'pictureChat': 
-    variableImg=iconChat
+    image = iconChat
       break;
       
     case 'pictureMoney':
-    variableImg=iconMoney
+    image = iconMoney
       break;
     
     case 'pictureSecurity':
-    variableImg=iconSecurity
-      break;
-      
-    
-  }
+    image = iconSecurity
+      break; 
+  };
   
   return ( 
     <>
       <div className="feature-item">
-          <img src={variableImg} alt="Chat Icon" className="feature-icon" />
+          <img src={image} alt="Chat Icon" className="feature-icon"/>
           <h3 className="feature-item-title">{props.element.title}</h3>
           <p>
             {props.element.text}
           </p>
         </div>
     </>
-  )   
+  );   
 
 }
