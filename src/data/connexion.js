@@ -13,7 +13,7 @@ const connectionSlice= createSlice({
     },
     
     reducers:{
-        getToken:  (state,action)=>{
+        getToken:(state,action)=>{
             return {
                 ...state,
                 email:action.payload.email,
@@ -22,7 +22,7 @@ const connectionSlice= createSlice({
             }
             
         },
-        getUser:  (state,action)=>{
+        getUser:(state,action)=>{
             return {
                 ...state,
                 firstName:action.payload.firstName,
