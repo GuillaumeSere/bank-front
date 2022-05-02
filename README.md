@@ -24,6 +24,25 @@
 - Lancer le _back-end_ sur le port 3001 : `npm run dev:server`
 - Remplir la base de données avec deux utilisateurs: `npm run populate-db`
 
+## Populated Database Data
+
+Once you run the `populate-db` script, you should have two users in your database:
+
+### Tony Stark
+
+- First Name: `Tony`
+- Last Name: `Stark`
+- Email: `tony@stark.com`
+- Password: `password123`
+
+### Steve Rogers
+
+- First Name: `Steve`,
+- Last Name: `Rogers`,
+- Email: `steve@rogers.com`,
+- Password: `password456`
+
+
 ### `Installation et lancement du _front-end_`
 
 - Cloner le présent repo du _front-end_: `git clone https://github.com/GuillaumeSere/bank-front.git`
