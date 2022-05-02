@@ -49,6 +49,10 @@ Les 2 utilisateurs enregistré dans la base de donnée:
 - En se plaçant dans ce repo du _front-end_, installer ses dépendances : `npm install`
 - Lancer le _front-end_ sur le port 3000 : `npm start`
 
+### Modèle API côté back-end
+
+-[Swagger](https://editor.swagger.io/)
+
 
 
 
