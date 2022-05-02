@@ -20,14 +20,15 @@
 ### `Installation et lancement du _back-end_`
 
 - Cloner le repo du _back-end_ : `git clone https://github.com/GuillaumeSere/Project-10-Bank-API.git`
-- En se plaçant dans ce repo du _back-end_, installer ses dépendances : `yarn`
-- Lancer le _back-end_ sur le port 3000 (port par défaut) : `yarn dev`
+- En se plaçant dans ce repo du _back-end_, installer ses dépendances : `npm install`
+- Lancer le _back-end_ sur le port 3001 : `npm run dev:server`
+- Remplir la base de données avec deux utilisateurs: `npm run populate-db`
 
 ### `Installation et lancement du _front-end_`
 
 - Cloner le présent repo du _front-end_: `git clone https://github.com/GuillaumeSere/bank-front.git
 - En se plaçant dans ce repo du _front-end_, installer ses dépendances : `npm install`
-- Lancer le _front-end_ sur le port 3001 : `npm start`
+- Lancer le _front-end_ sur le port 3000 : `npm start`
 
 
 
