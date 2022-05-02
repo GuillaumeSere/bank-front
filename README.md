@@ -51,7 +51,7 @@ Les 2 utilisateurs enregistré dans la base de donnée:
 
 ### Modèle API côté back-end
 
--[Swagger](https://editor.swagger.io/)
+- [Swagger](https://editor.swagger.io/)
 
 
 
