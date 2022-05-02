@@ -29,7 +29,7 @@ export const axiosProfile = async(token) =>{
 }
 
 //edit user information
-export const axiosPutUse = async (token,newUser) =>{
+export const axiosPutUser = async (token,newUser) =>{
     try{
         const response = await apiUrl.put('/user/profile', newUser, {
             headers: {
