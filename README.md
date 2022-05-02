@@ -26,7 +26,7 @@
 
 ### `Installation et lancement du _front-end_`
 
-- Cloner le présent repo du _front-end_: `git clone https://github.com/GuillaumeSere/bank-front.git
+- Cloner le présent repo du _front-end_: `git clone https://github.com/GuillaumeSere/bank-front.git`
 - En se plaçant dans ce repo du _front-end_, installer ses dépendances : `npm install`
 - Lancer le _front-end_ sur le port 3000 : `npm start`
 
