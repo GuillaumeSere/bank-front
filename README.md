@@ -24,9 +24,9 @@
 - Lancer le _back-end_ sur le port 3001 : `npm run dev:server`
 - Remplir la base de données avec deux utilisateurs: `npm run populate-db`
 
-## Populated Database Data
+## Base de donnée
 
-Once you run the `populate-db` script, you should have two users in your database:
+Les 2 utilisateurs enregistré dans la base de donnée:
 
 ### Tony Stark
 
