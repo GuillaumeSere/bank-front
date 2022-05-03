@@ -45,11 +45,11 @@ export default function UserProfile() {
                                     <form >
                                         <div className='form-first-line'>
                                             <label htmlFor="fisrtName">
-                                                <input type="text" className="input-new" id="firstName" onChange={(e) => setFirstName(e.target.value)} />
+                                                <input type="text" className="input-new" onChange={(e) => setFirstName(e.target.value)} />
                                             </label>
 
                                             <label htmlFor="lastName">
-                                                <input type="text" id="lastName" className='input-new' onChange={(e) => setLastName(e.target.value)} />
+                                                <input type="text" className='input-new' onChange={(e) => setLastName(e.target.value)} />
                                             </label>
                                         </div>
                                         <div className='form-second-line'>

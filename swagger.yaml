@@ -115,7 +115,7 @@ paths:
           description: Invalid Fields
         '500':
           description: Internal Server Error
-  /transactions/getTranssaction:
+  /transactions/getTransaction:
     get:
       security:
         - Bearer: []
