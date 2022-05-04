@@ -53,10 +53,10 @@ export default function UserProfile() {
                                             </label>
                                         </div>
                                         <div className='form-second-line'>
-                                            <button type='button' className='button-edit' onClick={() => editUser()}>
+                                            <button type='button' className='button-edit' onClick={() => editUser()} >
                                                 Save
                                             </button>
-                                            <button type='button' className='button-edit' onClick={() => displayFormEdit()}>
+                                            <button type='button' className='button-edit' onClick={() => displayFormEdit()} >
                                                 Cancel
                                             </button>
                                         </div>

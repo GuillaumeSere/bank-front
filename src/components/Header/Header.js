@@ -40,7 +40,7 @@ import * as connectionActions from '../../data/connexion';
                 {firstName}
               </Link>
 
-               <Link to="/" className='main-nav-item main-button-out' onClick={()=>signOut()}>
+               <Link to="/" className='main-nav-item main-button-out' onClick={() => signOut()}>
                <i className='fa fa-sign-out'></i>
                Sign out
              </Link></>

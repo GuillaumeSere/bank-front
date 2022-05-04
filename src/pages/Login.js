@@ -47,15 +47,17 @@ export default function SignIn(){
                 <h1>Sign In</h1>
                 <form>
                     <div className="input-wrapper">
-                        <label>Email</label><input type="text" onChange={e=>setEmail(e.target.value)}/>
+                        <label>Email</label>
+                        <input type="text" onChange={ e => setEmail(e.target.value)} />
                     </div>
                     <div className="input-wrapper">
-                        <label>Password</label><input type="password" onChange={e=>setPassword(e.target.value)}/>
+                        <label>Password</label>
+                        <input type="password" onChange={ e => setPassword(e.target.value)} />
                     </div>
                     <div className="input-remember">
                         <label><input type="checkbox"/>Remember me</label>
                     </div>
-                    <button type="button" className="sign-in-button" onClick={()=>submit()}>Sign In</button>
+                    <button type="button" className="sign-in-button" onClick={ () => submit()}> Sign In </button>
                 </form>
             </section>
         </main>
