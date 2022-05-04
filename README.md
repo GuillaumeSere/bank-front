@@ -52,6 +52,7 @@ Les 2 utilisateurs enregistré dans la base de donnée:
 ### Modèle API côté back-end
 
 - [Swagger](https://editor.swagger.io/)
+- https://app.swaggerhub.com/apis-docs/GuillaumeSere4/argent-bank-api/1.0.0#/
 
 
 
