@@ -1,7 +1,7 @@
 import React, { useEffect, useState }  from 'react';
 import './Login.css';
 import * as connectionActions from '../data/connexion';
-import { callApi } from '../data/callApi';
+import  callApi  from '../data/callApi';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';

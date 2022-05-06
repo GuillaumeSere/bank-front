@@ -5,34 +5,40 @@ const apiUrl = axios.create({
 }); 
 
 
-const callApi = {
-
-//find the token
- axiosToken: async (params) =>{
+class callApi {
+ 
+    //find the token
+    axiosToken = async (params) =>{
         const response = await apiUrl.post('/user/login', params);
         return response.data.body.token; 
-},
+    }
 
-//look up user information
- axiosProfile: async (token) =>{
+    //look up user information
+     axiosProfile = async (token) =>{
         const response = await apiUrl.post('/user/profile', {}, {
             headers: {
                 Authorization: `Bearer ${token}`
             }
         });
         return response.data.body;
-},
+    }
 
-//edit user information
- axiosPutUser: async (token,newUser) =>{
+    //edit user information
+    axiosPutUser = async (token,newUser) =>{
         const response = await apiUrl.put('/user/profile', newUser, {
             headers: {
                 Authorization: `Bearer ${token}`
             }
         });
         return response.data.body;
-}
-  
+    } 
+
 }
 
-export { callApi };
+export default new callApi();
+
+
+
+
+
+

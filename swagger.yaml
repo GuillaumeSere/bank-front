@@ -11,6 +11,7 @@ tags:
   - name: Transaction Module
 schemes:
   - http
+  - https
 paths:
   /user/login:
     post:

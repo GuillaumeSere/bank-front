@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
-import { callApi } from '../data/callApi';
+import  callApi  from '../data/callApi';
 import * as connectionActions from '../data/connexion';
 import transactionsData from "../data/transactions";
 import Card from '../components/Card/Card';
@@ -24,9 +24,9 @@ export default function UserProfile() {
     const dispatch = useDispatch()
 
     function displayFormEdit() {
-
         setdisplayEditName(!displayEditName)
     }
+
     async function editUser() {
         const axios = await callApi.axiosPutUser(stateReduxToken, { firstName, lastName })
         dispatch(connectionActions.getUser({ firstName: axios.firstName, lastName: axios.lastName }))
@@ -38,8 +38,7 @@ export default function UserProfile() {
             <>
                 <main className="main-profil bg-dark">
                     <div className="header title-welcome">
-                        {
-                            displayEditName ? (
+                        { displayEditName ? (
                                 <>
                                     <h1>Welcome back</h1>
                                     <form >
